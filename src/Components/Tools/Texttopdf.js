@@ -3,7 +3,7 @@ import { saveAs } from "file-saver";
 import pdfMake from "pdfmake/build/pdfmake";
 import pdfFonts from "pdfmake/build/vfs_fonts";
 
-const Converter = () => {
+const TextToPdf = () => {
   const [text, setText] = useState("");
 
   const convert = () => {
@@ -16,7 +16,7 @@ const Converter = () => {
     };
 
     pdfMake.vfs = pdfFonts.pdfMake.vfs;
-    pdfMake.createPdf(docDefinition).download("converted.pdf");
+    pdfMake.createPdf(docDefinition).download("texttopdf.pdf");
   };
 
   return (
@@ -27,4 +27,4 @@ const Converter = () => {
   );
 };
 
-export default Converter;
+export default TextToPdf;

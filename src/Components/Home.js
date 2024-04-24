@@ -1,13 +1,12 @@
 import React from "react";
-import Converter from "./Converter";
+import TextToPdf from "./Tools/Texttopdf";
 import NavbarScroll from "./Navbar";
 
 
 function Home() {
   return (
     <div>
-       <NavbarScroll/>
-      <Converter/>
+       Welcome to the main Page
     </div>
   );
 }
