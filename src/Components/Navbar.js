@@ -8,11 +8,11 @@ function BasicExample() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">Web Tools</Navbar.Brand>
+        <Navbar.Brand href="/">Web Tools</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
             <NavDropdown title="Tools" id="basic-nav-dropdown">
               <NavDropdown.Item as={Link} to="/text-to-pdf">
                 Text to PDF

@@ -1,9 +1,10 @@
+
 import React, { useState } from "react";
 import { saveAs } from "file-saver";
 import pdfMake from "pdfmake/build/pdfmake";
 import pdfFonts from "pdfmake/build/vfs_fonts";
 
-const TextToPdf = () => {
+const Converter = () => {
   const [text, setText] = useState("");
 
   const convert = () => {
@@ -16,7 +17,7 @@ const TextToPdf = () => {
     };
 
     pdfMake.vfs = pdfFonts.pdfMake.vfs;
-    pdfMake.createPdf(docDefinition).download("texttopdf.pdf");
+    pdfMake.createPdf(docDefinition).download("converted.pdf");
   };
 
   return (
@@ -27,4 +28,4 @@ const TextToPdf = () => {
   );
 };
 
-export default TextToPdf;
+export default Converter;
